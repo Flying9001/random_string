@@ -17,11 +17,17 @@ A-Z
 
 小程序效果图:  
     
-    
+​    
 <center>
 <img src="https://upload-images.jianshu.io/upload_images/4412479-23ca0895be68c6cb.gif?imageMogr2/auto-orient/strip" />
 </center>
 
+小程序码:  
 
+<center>
+
+<img src="https://upload-images.jianshu.io/upload_images/4412479-9a3aa4ae0c050388.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" />
+
+</center>
 
 
