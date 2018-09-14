@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='title'>随机字符串生成</view>
+  <button class='btn-random' hover-class='btn-random-hover' catchtap='getRandomStr'>生成新的字符串</button>
+  <view class='random-str-view'>
+      <text class='random-string'>{{randommessageup}}</text>
+      <button class='btn-copy' hover-class='btn-copy-hover' catchtap='copyUp'>复制</button>
+  </view>
+  <hr/>
+  <button class='btn-random' hover-class='btn-random-hover' catchtap='getRandomStrWithSymbol'>生成新的字符串(包含符号)</button>
+  <view class='random-str-view'>
+      <text class='random-string'>{{randommessagedown}}</text>
+      <button class='btn-copy' hover-class='btn-copy-hover' catchtap='copyDown'>复制</button>
+  </view>
+  
+</view>
