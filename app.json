@@ -1,12 +1,28 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/help/help"
+    
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "随机字符生成",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#797A7A",
+    "selectedColor": "#008000",
+    "backgroundColor":"#F6F8F9",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/help/help",
+        "text": "教程"
+      }
+    ]
   }
 }

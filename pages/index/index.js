@@ -1,49 +1,39 @@
 //index.js
 const common = require("../../utils/common.js");
 const updateManager = wx.getUpdateManager();
+/** 自定义长度 */
+const lengths = [];
 //获取应用实例
 const app = getApp()
+
+for(let i = 8; i <=20; i++){
+  lengths.push(i);
+}
 
 Page({
   data: {
     randommessageup: "",
-    randommessagedown: ""
+    randommessagedown: "",
+    lengths: lengths,
+    length: 16
   },
   /**
    * 界面加载时触发
    */
   onLoad: function(){
-    var randomStrUp = common.getRandomStr(16);
-    var randomStrDown = common.getRandomStrWithSymbol(16);
+    var randomStrUp = common.getRandomStr(this.data.length);
+    var randomStrDown = common.getRandomStrWithSymbol(this.data.length);
     this.setData({
       randommessageup: randomStrUp,
       randommessagedown: randomStrDown
     });
   },
   /**
-   * 强制更新
-   */
-  onShow: function(){
-    updateManager.onUpdateReady(function () {
-      wx.showModal({
-        title: '更新提示',
-        content: '新版本已经准备好，是否重启应用？',
-        success: function (res) {
-          if (res.confirm) {
-            // 新的版本已经下载好，调用 applyUpdate 应用新版本并重启
-            updateManager.applyUpdate()
-          }
-        }
-      })
-    })
-  },
-
-  /**
    * 获取固定位数随机字符串
    * 不包含符号
    */
   getRandomStr: function(){
-    var randomStr = common.getRandomStr(16);
+    var randomStr = common.getRandomStr(this.data.length);
     this.setData({
       randommessageup: randomStr
       });
@@ -53,7 +43,7 @@ Page({
    * 包含符号
    */
   getRandomStrWithSymbol: function () {
-    var randomStr = common.getRandomStrWithSymbol(16);
+    var randomStr = common.getRandomStrWithSymbol(this.data.length);
     this.setData({
       randommessagedown: randomStr
     });
@@ -76,14 +66,20 @@ Page({
         data: this.data.randommessagedown,
     })
   },
+  bindChange: function (e) {
+    const val = e.detail.value
+    this.setData({
+      length: this.data.lengths[val[0]]
+    })
+  },
   /**
-   * 小程序分享设置
-   */
+  * 小程序分享设置
+  */
   onShareAppMessage: function () {
     return {
       title: '随机字符生成工具',
-      desc: '简洁、实用的字符生成工具',
-      path: '/pages/index/index'
+      path: '/pages/index/index',
+      imageUrl: 'https://upload-images.jianshu.io/upload_images/4412479-8c909d5ac1fdcfab.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240'
     }
   },
 

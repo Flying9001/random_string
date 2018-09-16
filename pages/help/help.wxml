@@ -1,0 +1,48 @@
+<!--pages/help/help.wxml-->
+<scroll-view class='root-view'>
+<text class='title-style title-h1-style' style='display: flex; justify-content: center;align-items: center;'>密码管理教程\n\n</text>
+<text class='title-style title-h2-style'>1 系统要求\n</text>
+<text>仅限 iOS 设备 \n</text>
+<text>iOS 11+ \n</text>
+<text>\n</text>
+<text class='title-style title-h2-style'>2 操作流程 \n</text>
+
+<text class='title-style title-h3-style'>2.1 打开设置，找到苹果帐号，点击打开 \n\n</text>
+<image src="https://upload-images.jianshu.io/upload_images/4412479-a8a6106554b68fdc.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" bindload="imageLoad" style="width:{{imageSize[0].width}}rpx; height:{{imageSize[0].height}}rpx" mode='aspectFit' data-index="0"/>
+<text>\n\n</text>
+
+<text class='title-style title-h3-style'>2.2 选择「iCloud」\n\n</text>
+<image src="https://upload-images.jianshu.io/upload_images/4412479-9f97672723c78b8b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" bindload="imageLoad" style="width:{{imageSize[1].width}}rpx; height:{{imageSize[1].height}}rpx" mode='aspectFit' data-index="1"/>
+<text>\n\n</text>
+
+<text class='title-style title-h3-style'>2.3 将「钥匙串」同步功能打开(打开之后可以在iOS设备之间同步) \n\n</text>
+<image src="http://upload-images.jianshu.io/upload_images/4412479-679036b9fd84e589.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" bindload="imageLoad" style="width:{{imageSize[2].width}}rpx; height:{{imageSize[2].height}}rpx" mode='aspectFit' data-index="2"/>
+<text>\n\n</text>
+
+<text class='title-style title-h3-style'>2.4 返回「设置」，找到「帐号密码」功能并打开 \n\n</text>
+<image src="http://upload-images.jianshu.io/upload_images/4412479-defc0567fa3de166.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" bindload="imageLoad" style="width:{{imageSize[3].width}}rpx; height:{{imageSize[3].height}}rpx" mode='aspectFit' data-index="3"/>
+<text>\n\n</text>
+
+<text class='title-style title-h3-style'>2.5 选择「应用和网站密码」，需要指纹验证或密码验证(这样才安全) \n\n</text>
+<image src="http://upload-images.jianshu.io/upload_images/4412479-5ab4ee95cfc53135.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" bindload="imageLoad" style="width:{{imageSize[4].width}}rpx; height:{{imageSize[4].height}}rpx" mode='aspectFit' data-index="4"/>
+<text>\n\n</text>
+<image src="http://upload-images.jianshu.io/upload_images/4412479-3a1143e35edea9c6.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" bindload="imageLoad" style="width:{{imageSize[5].width}}rpx; height:{{imageSize[5].height}}rpx" mode='aspectFit' data-index="5"/>
+<text>\n\n</text>
+
+<text class='title-style title-h3-style'>2.6 添加/删除帐号和密码 \n\n</text>
+<image src="http://upload-images.jianshu.io/upload_images/4412479-59b0d15046c26c13.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" bindload="imageLoad" style="width:{{imageSize[6].width}}rpx; height:{{imageSize[6].height}}rpx" mode='aspectFit' data-index="6"/>
+<text>\n\n</text>
+
+<text class='title-style title-h3-style'>2.7 跨设备查看 \n\n</text>
+<image src="http://upload-images.jianshu.io/upload_images/4412479-061b77a578c3be89.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" bindload="imageLoad" style="width:{{imageSize[7].width}}rpx; height:{{imageSize[7].height}}rpx" mode='aspectFit' data-index="7"/>
+<text>\n\n</text>
+<image src="http://upload-images.jianshu.io/upload_images/4412479-7d2ea0753fabfbfd.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" bindload="imageLoad" style="width:{{imageSize[8].width}}rpx; height:{{imageSize[8].height}}rpx" mode='aspectFit' data-index="8"/>
+<text>\n\n</text>
+
+<text class='title-style title-h3-style'>2.8 APP登录校验 \n\n</text>
+<image src="http://upload-images.jianshu.io/upload_images/4412479-8a7af171fe11c7a5.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" bindload="imageLoad" style="width:{{imageSize[9].width}}rpx; height:{{imageSize[9].height}}rpx" mode='aspectFit' data-index="9"/>
+<text>\n\n</text>
+
+<text class='title-style'>至此,一个相对安全的密码管理的功能就实现了\n\n</text>
+
+</scroll-view>
