@@ -19,7 +19,7 @@ A-Z
     
 ​    
 <center>
-<img src="https://upload-images.jianshu.io/upload_images/4412479-23ca0895be68c6cb.gif?imageMogr2/auto-orient/strip" />
+<img src="https://upload-images.jianshu.io/upload_images/4412479-9cf7a0551746c8fa.gif?imageMogr2/auto-orient/strip" />
 </center>
 
 小程序码:  
